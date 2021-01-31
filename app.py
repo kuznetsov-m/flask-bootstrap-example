@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    posts = []
-    return render_template('index.html', posts=posts)
+    return render_template('index.html')
 
 if __name__ == "__main__":
     if len(argv) == 2:
